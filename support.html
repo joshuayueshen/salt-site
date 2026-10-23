@@ -1,43 +1,228 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Salt 技术支持</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>盐输入法 · 支持 | 鹽輸入法 | Salt Support</title>
+<meta name="description" content="盐输入法：隐私优先的中文键盘，键盘本身不联网。Salt: a privacy-first Chinese keyboard that never goes online.">
 <link rel="stylesheet" href="style.css">
 </head>
-<body><main>
-<nav><a href="./">Salt</a><a href="privacy.html">隐私政策 Privacy</a><a href="support.html">支持 Support</a></nav>
-<h1>技术支持</h1>
-<p>有问题或建议，请发邮件到 <a href="mailto:saltkeyboard.app@gmail.com">saltkeyboard.app@gmail.com</a>。报告问题时，请写上 iOS 版本、机型和复现步骤。</p>
+<body>
+<main>
 
-<h2>如何启用 Salt 键盘？</h2>
-<p>打开“设置”→“通用”→“键盘”→“键盘”→“添加新键盘”，选择 Salt。打字时长按或轻点地球键，就能切换到 Salt。</p>
+<header class="brand">
+  <h1>盐输入法 · 鹽輸入法 · Salt</h1>
+  <p>隐私优先的中文输入法，键盘本身不联网。</p>
+</header>
 
-<h2>需要开启“完全访问”吗？</h2>
-<p>不需要。开启后才有按键震动和候选栏的 Salt 快捷入口，其他功能都不受影响。Salt 键盘不联网。</p>
+<nav class="lang" aria-label="Language">
+  <a href="#zh-Hans" lang="zh-Hans">简体中文</a>
+  <a href="#zh-Hant" lang="zh-Hant">繁體中文</a>
+  <a href="#en" lang="en">English</a>
+  <a href="privacy.html">隐私政策 / 隱私權政策 / Privacy</a>
+</nav>
 
-<h2>怎么切换简体和繁体？</h2>
-<p>在 Salt App 的设置里选择输出字形：简体、繁体，或台湾正体。</p>
+<!-- ============ 简体中文 ============ -->
+<section id="zh-Hans" class="lang-block" lang="zh-Hans">
+  <h2>支持</h2>
+  <p>盐输入法外观和手感贴近 iOS 系统键盘，底层是开源的 Rime 引擎。输入、联想和学习都在你的设备上完成。</p>
 
-<h2>怎么导入其他 Rime 输入法的词库？</h2>
-<p>把 *.userdb.txt 文件放进“文件”App 中 Salt 文件夹的 Inbox/，打开 Salt App 时会自动导入并合并。</p>
+  <h3>常见问题</h3>
 
-<h2>换手机后词库还在吗？</h2>
-<p>Salt 每天会在 Backups/ 里自动备份。可以把 Salt 文件夹里的备份拷到新设备，在 Salt App 里恢复。</p>
+  <details>
+    <summary>怎么启用盐输入法？</summary>
+    <ol>
+      <li>打开 iPhone 或 iPad 的「设置」›「通用」›「键盘」›「键盘」。</li>
+      <li>点「添加新键盘」，选择「盐输入法」。</li>
+      <li>在任意输入框里长按地球键，切换到盐输入法。</li>
+    </ol>
+    <p>第一次打开盐输入法 App 时会先准备词库，请停留在进度页直到完成，之后键盘才能正常给出候选。</p>
+  </details>
 
-<hr>
+  <details>
+    <summary>一定要开「完全访问」吗？它是做什么的？</summary>
+    <p>不需要。关闭「完全访问」也能正常打字。iOS 对所有开启完全访问的键盘显示同一条提示，盐输入法只用它来：</p>
+    <ul>
+      <li>按键震动；</li>
+      <li>候选栏上打开盐输入法 App 的快捷入口；</li>
+      <li>让键盘把「不再自动更正的英文词」和选过的 emoji 存到与 App 共用的位置，App 才能看到它们（不开时这些只记在键盘自己那里）。</li>
+    </ul>
+    <p>开了完全访问，键盘也不联网。在密码输入框中，iOS 会自动换用系统键盘。</p>
+  </details>
 
-<div lang="en">
-<h1>Support</h1>
-<p>For questions or feedback, email <a href="mailto:saltkeyboard.app@gmail.com">saltkeyboard.app@gmail.com</a>. When reporting a bug, please include your iOS version, device model and the steps to reproduce it.</p>
-<h2>How do I enable Salt?</h2>
-<p>Go to Settings → General → Keyboard → Keyboards → Add New Keyboard and choose Salt. While typing, tap or hold the globe key to switch to it.</p>
-<h2>Do I need Full Access?</h2>
-<p>No. Full Access only enables haptics and the candidate-bar shortcut to the Salt app. Everything else works without it, and the keyboard never goes online.</p>
-<h2>How do I switch between Simplified and Traditional?</h2>
-<p>Choose the output script in Salt's settings: Simplified, Traditional or Taiwan Standard.</p>
-<h2>Can I import dictionaries from other Rime apps?</h2>
-<p>Put *.userdb.txt files in the Inbox/ folder inside Salt's folder in the Files app. They are imported and merged the next time you open Salt.</p>
-</div>
-</main></body></html>
+  <details>
+    <summary>怎么切换简体和繁体？</summary>
+    <p>打开 App，在「键盘」页的「字形」里选「简体」或「繁體」，下次弹出键盘时生效。繁體模式下，内置词库、雾凇词库和你自己加的主题词库都会转成繁体。</p>
+  </details>
+
+  <details>
+    <summary>九宫格怎么打英文？</summary>
+    <p>用九宫格打中文时，如果按键正好拼成一个英文单词，英文会出现在中文候选里。例如按 6529 可以选到 okay。英文候选不会排在第一位。</p>
+    <p>不需要的话，在「设置」›「输入」里关闭「九宫格英文候选」。</p>
+  </details>
+
+  <details>
+    <summary>怎么下载雾凇拼音词库？</summary>
+    <ol>
+      <li>打开 App，进入「词库」›「基础词库」。</li>
+      <li>在「雾凇拼音」下点「下载雾凇词库」（约 46 MB，从雾凇的 GitHub 官方仓库下载）。</li>
+      <li>下载后 App 要整理词库，第一次可能需要一两分钟，请留在本页等它完成。</li>
+      <li>在「基础词库」里选择「雾凇拼音」。</li>
+    </ol>
+    <p>之后可以在同一页「检查更新」或「删除雾凇词库」。雾凇拼音由 iDvel 维护，以 GPL-3.0 许可发布，盐输入法不内置。下载是唯一需要你主动联网的一步；键盘本身不联网。</p>
+  </details>
+
+  <details>
+    <summary>iCloud 同步会同步什么？怎么关闭？</summary>
+    <p>同步学会的词、主题词库、不再自动更正的英文词，以及模糊音、拼音方案、字形、英文拼写建议与自动更正、拼音显示在输入框中、九宫格英文候选这些输入习惯设置。键盘布局、震动等各设备分开设置。</p>
+    <p>数据存在你自己的 iCloud 私有数据库里，开发者看不到。同步由 App 完成，键盘本身不联网。</p>
+    <p>默认开启。在「设置」›「iCloud 同步」可以关闭，或点「立即同步」。更换 iCloud 账号后，App 会让你选择「合并本机数据到此账号」或「仅本机使用」。</p>
+  </details>
+
+  <div class="contact">
+    <strong>联系我们</strong>
+    <p>问题、建议或错误报告，请发邮件到 <a href="mailto:saltkeyboard.app@gmail.com">saltkeyboard.app@gmail.com</a>。方便的话请附上设备型号、iOS 版本和 App 版本（「设置」›「关于」›「版本」）。</p>
+  </div>
+</section>
+
+<!-- ============ 繁體中文 ============ -->
+<section id="zh-Hant" class="lang-block" lang="zh-Hant">
+  <h2>支援</h2>
+  <p>鹽輸入法的外觀和手感貼近 iOS 系統鍵盤，底層是開源的 Rime 引擎。輸入、聯想和學習都在你的裝置上完成。</p>
+  <p class="muted">目前 App 內的介面文字為簡體中文，以下引號內是 App 中實際顯示的字樣。</p>
+
+  <h3>常見問題</h3>
+
+  <details>
+    <summary>怎麼啟用鹽輸入法？</summary>
+    <ol>
+      <li>打開 iPhone 或 iPad 的「設定」›「一般」›「鍵盤」›「鍵盤」。</li>
+      <li>點「新增鍵盤」，選擇「鹽輸入法」。</li>
+      <li>在任何輸入框長按地球鍵，切換到鹽輸入法。</li>
+    </ol>
+    <p>第一次打開鹽輸入法 App 時會先準備詞庫，請停留在進度頁直到完成，之後鍵盤才能正常給出候選。</p>
+  </details>
+
+  <details>
+    <summary>一定要開「完整取用」嗎？它是做什麼的？</summary>
+    <p>不需要。關閉「完整取用」也能正常打字。iOS 對所有開啟完整取用的鍵盤顯示同一則提示，鹽輸入法只用它來：</p>
+    <ul>
+      <li>按鍵震動；</li>
+      <li>候選列上打開鹽輸入法 App 的捷徑；</li>
+      <li>讓鍵盤把「不再自動修正的英文字」和選過的 emoji 存到與 App 共用的位置，App 才看得到（不開時只記在鍵盤自己那裡）。</li>
+    </ul>
+    <p>開了完整取用，鍵盤也不連網。在密碼輸入框中，iOS 會自動換用系統鍵盤。</p>
+  </details>
+
+  <details>
+    <summary>怎麼切換簡體和繁體？</summary>
+    <p>打開 App，在「键盘」頁的「字形」選「简体」或「繁體」，下次叫出鍵盤時生效。繁體模式下，內建詞庫、霧凇詞庫和你自己加的主題詞庫都會轉成繁體。</p>
+  </details>
+
+  <details>
+    <summary>九宮格怎麼打英文？</summary>
+    <p>用九宮格打中文時，如果按鍵剛好拼成一個英文單字，英文會出現在中文候選裡。例如按 6529 可以選到 okay。英文候選不會排在第一個。</p>
+    <p>不需要的話，在「设置」›「输入」關閉「九宫格英文候选」。</p>
+  </details>
+
+  <details>
+    <summary>怎麼下載霧凇拼音詞庫？</summary>
+    <ol>
+      <li>打開 App，進入「词库」›「基础词库」。</li>
+      <li>在「雾凇拼音」下點「下载雾凇词库」（約 46 MB，從霧凇的 GitHub 官方儲存庫下載）。</li>
+      <li>下載後 App 要整理詞庫，第一次可能需要一兩分鐘，請留在本頁等它完成。</li>
+      <li>在「基础词库」選擇「雾凇拼音」。</li>
+    </ol>
+    <p>之後可以在同一頁「检查更新」或「删除雾凇词库」。霧凇拼音由 iDvel 維護，以 GPL-3.0 授權發布，鹽輸入法不內建。下載是唯一需要你主動連網的一步；鍵盤本身不連網。</p>
+    <p class="muted">注音一律使用內建詞庫。</p>
+  </details>
+
+  <details>
+    <summary>iCloud 同步會同步什麼？怎麼關閉？</summary>
+    <p>同步學會的詞、主題詞庫、不再自動修正的英文字，以及模糊音、拼音方案、字形、英文拼字建議與自動修正、拼音顯示在輸入框中、九宮格英文候選這些輸入習慣設定。鍵盤佈局、震動等各裝置分開設定。</p>
+    <p>資料存在你自己的 iCloud 私人資料庫裡，開發者看不到。同步由 App 完成，鍵盤本身不連網。</p>
+    <p>預設開啟。在「设置」›「iCloud 同步」可以關閉，或點「立即同步」。更換 iCloud 帳號後，App 會讓你選擇「合并本机数据到此账号」或「仅本机使用」。</p>
+  </details>
+
+  <div class="contact">
+    <strong>聯絡我們</strong>
+    <p>問題、建議或錯誤回報，請寄信到 <a href="mailto:saltkeyboard.app@gmail.com">saltkeyboard.app@gmail.com</a>。方便的話請附上裝置型號、iOS 版本和 App 版本（「设置」›「关于」›「版本」）。</p>
+  </div>
+</section>
+
+<!-- ============ English ============ -->
+<section id="en" class="lang-block" lang="en">
+  <h2>Support</h2>
+  <p>Salt is a Chinese keyboard that looks and feels like the iOS system keyboard, with the open-source Rime engine underneath. Typing, suggestions and learning all happen on your device.</p>
+  <p class="muted">The app's screens are currently in Simplified Chinese. Labels below are shown as they appear in the app, with a translation.</p>
+
+  <h3>FAQ</h3>
+
+  <details>
+    <summary>How do I turn on the keyboard?</summary>
+    <ol>
+      <li>Open Settings › General › Keyboard › Keyboards.</li>
+      <li>Tap Add New Keyboard and choose Salt (shown as 盐输入法 or 鹽輸入法 when your device is set to Chinese).</li>
+      <li>In any text field, touch and hold the globe key and switch to Salt.</li>
+    </ol>
+    <p>The first time you open the Salt app it prepares its dictionaries. Stay on the progress page until it finishes; the keyboard offers full suggestions after that.</p>
+  </details>
+
+  <details>
+    <summary>Do I need Full Access? What is it for?</summary>
+    <p>No. Typing works normally with Full Access off. iOS shows the same warning for every keyboard that asks for Full Access. Salt uses it only for:</p>
+    <ul>
+      <li>haptic feedback on key presses;</li>
+      <li>the shortcut on the candidate bar that opens the Salt app;</li>
+      <li>letting the keyboard save English words you told it not to autocorrect, and the emoji you pick, where the app can see them. Without Full Access they stay with the keyboard only.</li>
+    </ul>
+    <p>The keyboard never goes online, with or without Full Access. In password fields iOS switches to the system keyboard automatically.</p>
+  </details>
+
+  <details>
+    <summary>How do I switch between Simplified and Traditional?</summary>
+    <p>In the app, on the 键盘 (Keyboard) tab, set 字形 (Script) to 简体 (Simplified) or 繁體 (Traditional). It takes effect the next time the keyboard appears. Traditional converts every dictionary, including rime-ice and your own topic word lists.</p>
+  </details>
+
+  <details>
+    <summary>How do I type English on the 9-key pad?</summary>
+    <p>When the keys you press on the 9-key pad also spell an English word, the word appears among the Chinese candidates. For example, 6529 offers "okay". English words are never ranked first.</p>
+    <p>To turn this off, go to 设置 (Settings) › 输入 (Input) and switch off 九宫格英文候选 (9-key English candidates).</p>
+  </details>
+
+  <details>
+    <summary>How do I download the rime-ice (雾凇拼音) dictionary?</summary>
+    <ol>
+      <li>In the app, open 词库 (Dictionaries) › 基础词库 (Base dictionary).</li>
+      <li>Under 雾凇拼音, tap 下载雾凇词库 (Download). It is about 46 MB, from the official rime-ice repository on GitHub.</li>
+      <li>The app then prepares the dictionary. The first time can take a minute or two; stay on the page until it finishes.</li>
+      <li>Choose 雾凇拼音 as the base dictionary.</li>
+    </ol>
+    <p>The same page lets you check for updates (检查更新) or remove it (删除雾凇词库). rime-ice is maintained by iDvel under GPL-3.0 and is not bundled with Salt. The keyboard itself never goes online.</p>
+  </details>
+
+  <details>
+    <summary>What does iCloud sync sync, and how do I turn it off?</summary>
+    <p>It syncs the words Salt has learned, your topic word lists, English words you told it not to autocorrect, and these typing settings: fuzzy pinyin, pinyin scheme, script, English suggestions and autocorrect, pinyin shown in the text field, and 9-key English candidates. Keyboard layout, haptics and similar settings stay per device.</p>
+    <p>The data lives in your own private iCloud database, where the developer can't see it. The app does the syncing; the keyboard itself never goes online.</p>
+    <p>Sync is on by default. Turn it off, or tap 立即同步 (Sync now), in 设置 (Settings) › iCloud 同步. If you switch iCloud accounts, the app asks whether to merge this device's data into the new account or keep it on this device only.</p>
+  </details>
+
+  <div class="contact">
+    <strong>Contact</strong>
+    <p>For questions, suggestions or bug reports, email <a href="mailto:saltkeyboard.app@gmail.com">saltkeyboard.app@gmail.com</a>. If you can, include your device model, iOS version and the app version (设置 › 关于 › 版本).</p>
+  </div>
+</section>
+
+<footer>
+  <nav class="pages">
+    <a href="index.html">支持 / Support</a>
+    <a href="privacy.html">隐私政策 / Privacy</a>
+  </nav>
+  <p>© 2026 Yue Shen</p>
+</footer>
+
+</main>
+</body>
+</html>

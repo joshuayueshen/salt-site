@@ -1,68 +1,217 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Salt 隐私政策</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>盐输入法 · 隐私政策 | 鹽輸入法 · 隱私權政策 | Salt Privacy Policy</title>
+<meta name="description" content="盐输入法隐私政策：键盘不联网，开发者不收集任何数据。Salt privacy policy: the keyboard never goes online and the developer collects no data.">
 <link rel="stylesheet" href="style.css">
 </head>
-<body><main>
-<nav><a href="./">Salt</a><a href="privacy.html">隐私政策 Privacy</a><a href="support.html">支持 Support</a></nav>
-<h1>隐私政策</h1>
-<p class="muted">生效日期：2026 年 10 月 19 日</p>
-<p>你打的字，只属于你。Salt 的隐私保障来自架构设计，而不只是承诺。</p>
+<body>
+<main>
 
-<h2>我们不收集任何数据</h2>
-<p>Salt 不收集、不存储、不传输你的个人信息或输入内容。没有账号，没有统计分析，没有广告，也不追踪你。</p>
+<header class="brand">
+  <h1>隐私政策 · 隱私權政策 · Privacy Policy</h1>
+  <p>盐输入法 · 鹽輸入法 · Salt</p>
+  <p class="muted">生效日期 / 生效日期 / Effective: 2026-10-22（草稿 / 草稿 / draft）</p>
+</header>
 
-<h2>键盘不联网</h2>
-<p>Salt 键盘扩展不发出任何网络请求。输入、候选、联想和学习都由 Rime 引擎在你的设备上完成。</p>
+<nav class="lang" aria-label="Language">
+  <a href="#zh-Hans" lang="zh-Hans">简体中文</a>
+  <a href="#zh-Hant" lang="zh-Hant">繁體中文</a>
+  <a href="#en" lang="en">English</a>
+  <a href="index.html">支持 / Support</a>
+</nav>
 
-<h2>“完全访问”的用途</h2>
-<p>iOS 对所有开启“完全访问”的键盘都会显示同一条提示。Salt 只用这个权限做两件事：按键震动，以及从候选栏打开 Salt App。关闭“完全访问”后，打字功能不受影响。</p>
+<!-- ============ 简体中文 ============ -->
+<section id="zh-Hans" class="lang-block" lang="zh-Hans">
+  <h2>隐私政策</h2>
+  <p>盐输入法（下称「本 App」）由个人开发者 Yue Shen 开发。本政策说明本 App 和它的键盘扩展如何处理你的数据。简单地说：<strong>你打的字只在你的设备上处理，开发者不收集任何数据。</strong></p>
 
-<h2>数据存放在哪里</h2>
-<ul>
-<li>用户词库和设置保存在你设备上的 App Group 容器里，只有 Salt App 和 Salt 键盘能访问。</li>
-<li>Salt 文件夹可以在“文件”App 中看到，里面有自动备份和导出文件，都在你的设备上。</li>
-</ul>
+  <h3>1. 键盘不联网</h3>
+  <ul>
+    <li>键盘扩展不发出任何网络请求。你输入的内容由设备上的 Rime 引擎处理，不会被发送、上传或收集。</li>
+    <li>即使开启「完全访问」，键盘也不联网。</li>
+    <li>在密码输入框中，iOS 会自动换用系统键盘，本 App 的键盘接触不到密码。</li>
+  </ul>
 
-<h2>可选下载</h2>
-<p>只有当你主动选择下载“雾凇拼音”词库时，Salt App 才会联网，从该项目在 GitHub 上的官方仓库下载。这个请求不包含你的任何个人信息，但 GitHub 作为服务方，可能按其隐私政策记录访问信息（例如 IP 地址）。</p>
+  <h3>2. 保存在你设备上的数据</h3>
+  <p>为了让输入越用越顺手，本 App 在你的设备上保存以下内容：</p>
+  <ul>
+    <li>用户词库：键盘学会的词和词频；</li>
+    <li>你粘贴的主题词库、你导入的用户词库；</li>
+    <li>不再自动更正的英文词、选过的 emoji（可在设置中关闭「记住我选的 emoji」）；</li>
+    <li>输入设置，例如拼音方案、模糊音、字形、键盘布局；</li>
+    <li>用户词库和设置的自动备份、导出文件，存放在「文件」App 里可以看到的盐输入法文件夹中。</li>
+  </ul>
+  <p>这些数据只保存在本机：词库和设置在本 App 与键盘共用的 App 群组容器里，备份和导出在本 App 自己的文件夹里。删除本 App 会一并删除它们，你另存到别处的副本除外。</p>
+  <p>键盘提供英文拼写建议时，会使用 iOS 提供给键盘的通讯录姓名和「文本替换」。这些内容由系统交给键盘，只在设备上使用，不会保存到别处或发送出去。本 App 不请求通讯录权限。</p>
 
-<h2>儿童隐私</h2>
-<p>Salt 不收集任何人的数据，包括 13 岁以下儿童。</p>
+  <h3>3. App 什么时候联网</h3>
+  <p>只有主 App 会联网，而且只在以下两种情况：</p>
+  <ol>
+    <li><strong>下载雾凇拼音词库。</strong>只有在你点「下载雾凇词库」或「检查更新」时，App 才会从雾凇拼音在 GitHub 上的官方仓库（github.com / raw.githubusercontent.com）下载词库文件。这只是下载，不会上传你的任何数据。和访问任何网站一样，GitHub 会收到常规的网络请求信息（如 IP 地址），适用 GitHub 的隐私政策。</li>
+    <li><strong>iCloud 同步。</strong>见下一节。</li>
+  </ol>
+  <p>此外，当你点 App 内的项目主页或开源许可链接时，会在浏览器中打开对应网页。</p>
 
-<h2>政策变更</h2>
-<p>如果本政策有变更，会更新本页面和生效日期。</p>
+  <h3>4. iCloud 同步</h3>
+  <ul>
+    <li>iCloud 同步默认开启，可在「设置」›「iCloud 同步」中随时关闭。</li>
+    <li>同步的内容：用户词库（学会的词）、主题词库、不再自动更正的英文词，以及以下输入设置：模糊音、拼音方案、字形、英文拼写建议、自动更正、拼音显示在输入框中、九宫格英文候选。</li>
+    <li>这些数据通过 Apple 的 CloudKit 存在<strong>你自己 iCloud 账号的私有数据库</strong>里。开发者无法访问私有数据库，看不到你的数据。存储和传输由 Apple 负责，适用 Apple 的隐私政策。</li>
+    <li>同步只由主 App 完成，键盘扩展不联网。</li>
+  </ul>
 
-<h2>联系我们</h2>
-<p><a href="mailto:saltkeyboard.app@gmail.com">saltkeyboard.app@gmail.com</a></p>
+  <h3>5. 我们不做的事</h3>
+  <ul>
+    <li>没有账号，不需要登录。</li>
+    <li>没有广告，没有第三方统计或分析工具，不追踪你。</li>
+    <li>开发者不收集、不出售、不分享任何个人数据或输入内容。</li>
+  </ul>
 
-<hr>
+  <h3>6. 「完全访问」</h3>
+  <p>「完全访问」不是必须的。本 App 只用它来做按键震动、在候选栏打开 App，以及让键盘把不再自动更正的英文词和选过的 emoji 存到与 App 共用的位置。它不会让键盘联网。</p>
 
-<h1 lang="en">Privacy Policy</h1>
-<div lang="en">
-<p class="muted">Effective: October 19, 2026</p>
-<p>What you type belongs to you. Salt protects your privacy by design, not just by promise.</p>
-<h2>We collect no data</h2>
-<p>Salt does not collect, store or transmit any personal information or anything you type. There are no accounts, analytics, ads or tracking.</p>
-<h2>The keyboard never goes online</h2>
-<p>The Salt keyboard extension makes no network requests. Input, suggestions and learning all happen on your device through the Rime engine.</p>
-<h2>Full Access</h2>
-<p>iOS shows the same notice for every keyboard that asks for Full Access. Salt uses it only for haptic feedback and for a shortcut that opens the Salt app from the candidate bar. Typing works normally with Full Access turned off.</p>
-<h2>Where your data lives</h2>
-<ul>
-<li>Your user dictionary and settings stay in an App Group container on your device. Only the Salt app and the Salt keyboard can read it.</li>
-<li>The Salt folder in the Files app holds backups and exports, all on your device.</li>
-</ul>
-<h2>Optional downloads</h2>
-<p>The Salt app goes online only when you choose to download the optional rime-ice dictionary, which comes from that project's official GitHub repository. The request carries none of your personal information. GitHub may log access details such as your IP address under its own privacy policy.</p>
-<h2>Children</h2>
-<p>Salt collects no data from anyone, including children under 13.</p>
-<h2>Changes</h2>
-<p>If this policy changes, we will update this page and its effective date.</p>
-<h2>Contact</h2>
-<p><a href="mailto:saltkeyboard.app@gmail.com">saltkeyboard.app@gmail.com</a></p>
-</div>
-</main></body></html>
+  <h3>7. 儿童</h3>
+  <p>本 App 不收集任何人的个人数据，包括儿童。</p>
+
+  <h3>8. 未来的功能</h3>
+  <p>当前版本没有 AI 功能。将来如果加入需要联网的功能（例如按你的要求生成 AI 词库），只会在你主动使用时由主 App 联网，键盘仍然不联网；上线前我们会先更新本政策。</p>
+
+  <h3>9. 政策变更与联系方式</h3>
+  <p>本政策如有变更，会在本页更新并修改生效日期。有任何问题，请发邮件到 <a href="mailto:saltkeyboard.app@gmail.com">saltkeyboard.app@gmail.com</a>。</p>
+</section>
+
+<!-- ============ 繁體中文 ============ -->
+<section id="zh-Hant" class="lang-block" lang="zh-Hant">
+  <h2>隱私權政策</h2>
+  <p>鹽輸入法（下稱「本 App」）由個人開發者 Yue Shen 開發。本政策說明本 App 和它的鍵盤擴充功能如何處理你的資料。簡單地說：<strong>你打的字只在你的裝置上處理，開發者不收集任何資料。</strong></p>
+
+  <h3>1. 鍵盤不連網</h3>
+  <ul>
+    <li>鍵盤擴充功能不發出任何網路請求。你輸入的內容由裝置上的 Rime 引擎處理，不會被傳送、上傳或收集。</li>
+    <li>即使開啟「完整取用」，鍵盤也不連網。</li>
+    <li>在密碼輸入框中，iOS 會自動換用系統鍵盤，本 App 的鍵盤接觸不到密碼。</li>
+  </ul>
+
+  <h3>2. 儲存在你裝置上的資料</h3>
+  <p>為了讓輸入越用越順手，本 App 在你的裝置上儲存以下內容：</p>
+  <ul>
+    <li>使用者詞庫：鍵盤學會的詞和詞頻；</li>
+    <li>你貼上的主題詞庫、你匯入的使用者詞庫；</li>
+    <li>不再自動修正的英文字、選過的 emoji（可在設定中關閉「记住我选的 emoji」）；</li>
+    <li>輸入設定，例如拼音方案、模糊音、字形、鍵盤佈局；</li>
+    <li>使用者詞庫和設定的自動備份、匯出檔案，存放在「檔案」App 看得到的鹽輸入法資料夾中。</li>
+  </ul>
+  <p>這些資料只儲存在本機：詞庫和設定在本 App 與鍵盤共用的 App 群組容器裡，備份和匯出在本 App 自己的資料夾裡。刪除本 App 會一併刪除它們，你另存到別處的副本除外。</p>
+  <p>鍵盤提供英文拼字建議時，會使用 iOS 提供給鍵盤的聯絡人姓名和「替代文字」。這些內容由系統交給鍵盤，只在裝置上使用，不會儲存到別處或傳送出去。本 App 不要求聯絡人權限。</p>
+
+  <h3>3. App 什麼時候連網</h3>
+  <p>只有主 App 會連網，而且只在以下兩種情況：</p>
+  <ol>
+    <li><strong>下載霧凇拼音詞庫。</strong>只有在你點「下载雾凇词库」或「检查更新」時，App 才會從霧凇拼音在 GitHub 上的官方儲存庫（github.com / raw.githubusercontent.com）下載詞庫檔案。這只是下載，不會上傳你的任何資料。和造訪任何網站一樣，GitHub 會收到一般的網路請求資訊（如 IP 位址），適用 GitHub 的隱私權政策。</li>
+    <li><strong>iCloud 同步。</strong>見下一節。</li>
+  </ol>
+  <p>此外，當你點 App 內的專案首頁或開源授權連結時，會在瀏覽器中打開對應網頁。</p>
+
+  <h3>4. iCloud 同步</h3>
+  <ul>
+    <li>iCloud 同步預設開啟，可在「设置」›「iCloud 同步」中隨時關閉。</li>
+    <li>同步的內容：使用者詞庫（學會的詞）、主題詞庫、不再自動修正的英文字，以及以下輸入設定：模糊音、拼音方案、字形、英文拼字建議、自動修正、拼音顯示在輸入框中、九宮格英文候選。</li>
+    <li>這些資料透過 Apple 的 CloudKit 存在<strong>你自己 iCloud 帳號的私人資料庫</strong>裡。開發者無法存取私人資料庫，看不到你的資料。儲存和傳輸由 Apple 負責，適用 Apple 的隱私權政策。</li>
+    <li>同步只由主 App 完成，鍵盤擴充功能不連網。</li>
+  </ul>
+
+  <h3>5. 我們不做的事</h3>
+  <ul>
+    <li>沒有帳號，不需要登入。</li>
+    <li>沒有廣告，沒有第三方統計或分析工具，不追蹤你。</li>
+    <li>開發者不收集、不出售、不分享任何個人資料或輸入內容。</li>
+  </ul>
+
+  <h3>6. 「完整取用」</h3>
+  <p>「完整取用」不是必須的。本 App 只用它來做按鍵震動、在候選列打開 App，以及讓鍵盤把不再自動修正的英文字和選過的 emoji 存到與 App 共用的位置。它不會讓鍵盤連網。</p>
+
+  <h3>7. 兒童</h3>
+  <p>本 App 不收集任何人的個人資料，包括兒童。</p>
+
+  <h3>8. 未來的功能</h3>
+  <p>目前版本沒有 AI 功能。將來如果加入需要連網的功能（例如依你的要求產生 AI 詞庫），只會在你主動使用時由主 App 連網，鍵盤仍然不連網；上線前我們會先更新本政策。</p>
+
+  <h3>9. 政策變更與聯絡方式</h3>
+  <p>本政策如有變更，會在本頁更新並修改生效日期。有任何問題，請寄信到 <a href="mailto:saltkeyboard.app@gmail.com">saltkeyboard.app@gmail.com</a>。</p>
+</section>
+
+<!-- ============ English ============ -->
+<section id="en" class="lang-block" lang="en">
+  <h2>Privacy Policy</h2>
+  <p>Salt (盐输入法 / 鹽輸入法, "the app") is made by independent developer Yue Shen. This policy explains how the app and its keyboard extension handle your data. In short: <strong>what you type is processed only on your device, and the developer collects no data.</strong></p>
+
+  <h3>1. The keyboard never goes online</h3>
+  <ul>
+    <li>The keyboard extension makes no network requests. What you type is processed on your device by the Rime engine and is never sent, uploaded or collected.</li>
+    <li>This stays true with Full Access turned on.</li>
+    <li>In password fields iOS switches to the system keyboard, so Salt's keyboard never sees passwords.</li>
+  </ul>
+
+  <h3>2. Data stored on your device</h3>
+  <p>To get better as you type, the app stores the following on your device:</p>
+  <ul>
+    <li>your user dictionary: words the keyboard has learned and how often you use them;</li>
+    <li>topic word lists you paste in, and user dictionaries you import;</li>
+    <li>English words you told it not to autocorrect, and emoji you pick (turn off 记住我选的 emoji in Settings to stop remembering emoji);</li>
+    <li>input settings such as pinyin scheme, fuzzy pinyin, script and keyboard layout;</li>
+    <li>automatic backups and exports of your user dictionary and settings, in the Salt folder you can see in the Files app.</li>
+  </ul>
+  <p>All of this stays on your device: dictionaries and settings in an App Group container shared by the app and its keyboard, backups and exports in the app's own folder. Deleting the app deletes them, except copies you have saved elsewhere.</p>
+  <p>For English suggestions, the keyboard uses the contact names and Text Replacements that iOS provides to keyboards. The system hands these to the keyboard; they are used on device only and are never stored elsewhere or sent anywhere. The app does not ask for Contacts permission.</p>
+
+  <h3>3. When the app goes online</h3>
+  <p>Only the main app goes online, and only in two cases:</p>
+  <ol>
+    <li><strong>Downloading the rime-ice dictionary.</strong> Only when you tap Download (下载雾凇词库) or Check for updates (检查更新) does the app download dictionary files from the official rime-ice repository on GitHub (github.com / raw.githubusercontent.com). This is a download only; none of your data is uploaded. As with visiting any website, GitHub receives standard request information such as your IP address, under GitHub's privacy policy.</li>
+    <li><strong>iCloud sync.</strong> See the next section.</li>
+  </ol>
+  <p>Tapping a project homepage or open-source license link in the app opens that page in your browser.</p>
+
+  <h3>4. iCloud sync</h3>
+  <ul>
+    <li>iCloud sync is on by default. You can turn it off at any time in 设置 (Settings) › iCloud 同步.</li>
+    <li>What syncs: your user dictionary (learned words), topic word lists, English words you told it not to autocorrect, and these input settings: fuzzy pinyin, pinyin scheme, script, English suggestions, autocorrect, pinyin shown in the text field, and 9-key English candidates.</li>
+    <li>This data is stored with Apple's CloudKit in <strong>the private database of your own iCloud account</strong>. The developer has no access to private databases and can't see your data. Apple stores and transfers it under Apple's privacy policy.</li>
+    <li>Only the main app syncs. The keyboard extension never goes online.</li>
+  </ul>
+
+  <h3>5. What we don't do</h3>
+  <ul>
+    <li>No account and no sign-in.</li>
+    <li>No ads, no third-party analytics, no tracking.</li>
+    <li>The developer does not collect, sell or share any personal data or anything you type.</li>
+  </ul>
+
+  <h3>6. Full Access</h3>
+  <p>Full Access is optional. The app uses it only for haptic feedback, the candidate-bar shortcut that opens the app, and letting the keyboard save English words you told it not to autocorrect, and the emoji you pick, where the app can see them. It does not let the keyboard go online.</p>
+
+  <h3>7. Children</h3>
+  <p>The app collects no personal data from anyone, including children.</p>
+
+  <h3>8. Future features</h3>
+  <p>This version has no AI features. If we add a feature that needs the internet (for example, generating an AI dictionary when you ask for one), only the main app will go online, only when you use it, and the keyboard will still never go online. We will update this policy before such a feature ships.</p>
+
+  <h3>9. Changes and contact</h3>
+  <p>If this policy changes, we will update this page and its effective date. Questions? Email <a href="mailto:saltkeyboard.app@gmail.com">saltkeyboard.app@gmail.com</a>.</p>
+</section>
+
+<footer>
+  <nav class="pages">
+    <a href="index.html">支持 / Support</a>
+    <a href="privacy.html">隐私政策 / Privacy</a>
+  </nav>
+  <p>© 2026 Yue Shen</p>
+</footer>
+
+</main>
+</body>
+</html>
