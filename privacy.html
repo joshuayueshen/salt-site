@@ -14,7 +14,7 @@
 <header class="brand">
   <h1>隐私政策 · 隱私權政策 · Privacy Policy</h1>
   <p>盐输入法 · 鹽輸入法 · Salt</p>
-  <p class="muted">生效日期 / 生效日期 / Effective: 2026-10-22</p>
+  <p class="muted">生效日期 / 生效日期 / Effective: 2026-10-24</p>
 </header>
 
 <nav class="lang" aria-label="Language">
@@ -42,10 +42,17 @@
     <li>用户词库：键盘学会的词和词频；</li>
     <li>你粘贴的主题词库、你导入的用户词库；</li>
     <li>不再自动更正的英文词、选过的 emoji（可在设置中关闭「记住我选的 emoji」）；</li>
+    <li>你在 App 里编辑的常用语；</li>
+    <li>你长按候选置顶的词，以及选了「删除」后不再显示的词；</li>
     <li>输入设置，例如拼音方案、模糊音、字形、键盘布局；</li>
     <li>用户词库和设置的自动备份、导出文件，存放在「文件」App 里可以看到的盐输入法文件夹中。</li>
   </ul>
   <p>这些数据只保存在本机：词库和设置在本 App 与键盘共用的 App 群组容器里，备份和导出在本 App 自己的文件夹里。删除本 App 会一并删除它们，你另存到别处的副本除外。</p>
+  <p>常用语只存在这台设备上（App 与键盘共用的位置），不同步、不上传。</p>
+  <p>在键盘的快捷面板里打开「无痕模式」后，盐不再学习你选的词，也不记住不再自动更正的英文词和选过的 emoji，直到你手动关掉。开着时，空格键上会显示「无痕」，每次弹出键盘会短暂提示一次，App 主页也会显示提醒；连续开了 24 小时以上，会问你一次要不要关掉。</p>
+  <p>长按候选可以删除或置顶这个词。删除学会的词是从本机的用户词库里删掉；置顶记录只存在这台设备上，不同步。</p>
+  <p>「防误触」（「设置」›「键盘」，默认开启）只在全键盘拼音下起作用：点在按键边缘时，键盘用 App 内置的字母概率表判断你更可能想按哪个键。判断在设备上完成，不另外记录你的按键。</p>
+  <p><strong>仅 TestFlight 测试版：</strong>「设置」›「键盘」›「测试统计（仅测试版）」默认关闭。你手动开启后，键盘每天只记上屏、删除等次数，不记录打出的字、拼音和所在的 App；无痕模式开着时什么都不记。统计只存在这台设备上，不联网；只有你点「导出」才生成文件，由你决定发给谁。App Store 版本没有这个功能。</p>
   <p>键盘提供英文拼写建议时，会使用 iOS 提供给键盘的通讯录姓名和「文本替换」。这些内容由系统交给键盘，只在设备上使用，不会保存到别处或发送出去。本 App 不请求通讯录权限。</p>
 
   <h3>3. App 什么时候联网</h3>
@@ -59,7 +66,7 @@
   <h3>4. iCloud 同步</h3>
   <ul>
     <li>iCloud 同步默认开启，可在「设置」›「iCloud 同步」中随时关闭。</li>
-    <li>同步的内容：用户词库（学会的词）、主题词库、不再自动更正的英文词，以及以下输入设置：模糊音、拼音方案、字形、英文拼写建议、自动更正、拼音显示在输入框中、九宫格英文候选。</li>
+    <li>同步的内容：用户词库（学会的词）、主题词库、不再自动更正的英文词，以及以下输入设置：模糊音、拼音方案、字形、英文拼写建议、自动更正、拼音显示在输入框中、九宫格英文候选、九宫格简拼。常用语和候选置顶不同步。</li>
     <li>这些数据通过 Apple 的 CloudKit 存在<strong>你自己 iCloud 账号的私有数据库</strong>里。开发者无法访问私有数据库，看不到你的数据。存储和传输由 Apple 负责，适用 Apple 的隐私政策。</li>
     <li>同步只由主 App 完成，键盘扩展不联网。</li>
   </ul>
@@ -72,7 +79,8 @@
   </ul>
 
   <h3>6. 「完全访问」</h3>
-  <p>「完全访问」不是必须的。本 App 只用它来做按键震动、在候选栏打开 App，以及让键盘把不再自动更正的英文词和选过的 emoji 存到与 App 共用的位置。它不会让键盘联网。</p>
+  <p>「完全访问」不是必须的。本 App 只用它来做按键震动、快捷面板里的粘贴和打开 App，以及让键盘把你在键盘里改的设置、不再自动更正的英文词和选过的 emoji 存到与 App 共用的位置（英文词因此能随 iCloud 同步）。它不会让键盘联网。</p>
+  <p>快捷面板里的「粘贴」是 iOS 系统提供的粘贴按钮：只有你点它时，系统才把剪贴板内容交给键盘，键盘直接放进输入框，所以不会弹出「允许粘贴」的询问。剪贴板内容不会被保存，也不会被上传。</p>
 
   <h3>7. 儿童</h3>
   <p>本 App 不收集任何人的个人数据，包括儿童。</p>
@@ -102,10 +110,17 @@
     <li>使用者詞庫：鍵盤學會的詞和詞頻；</li>
     <li>你貼上的主題詞庫、你匯入的使用者詞庫；</li>
     <li>不再自動修正的英文字、選過的 emoji（可在設定中關閉「记住我选的 emoji」）；</li>
+    <li>你在 App 裡編輯的常用語；</li>
+    <li>你長按候選置頂的詞，以及選了「删除」後不再顯示的詞；</li>
     <li>輸入設定，例如拼音方案、模糊音、字形、鍵盤佈局；</li>
     <li>使用者詞庫和設定的自動備份、匯出檔案，存放在「檔案」App 看得到的鹽輸入法資料夾中。</li>
   </ul>
   <p>這些資料只儲存在本機：詞庫和設定在本 App 與鍵盤共用的 App 群組容器裡，備份和匯出在本 App 自己的資料夾裡。刪除本 App 會一併刪除它們，你另存到別處的副本除外。</p>
+  <p>常用語只存在這台裝置上（App 與鍵盤共用的位置），不同步、不上傳。</p>
+  <p>在鍵盤的快捷面板裡打開「无痕模式」後，鹽不再學習你選的詞，也不記住不再自動修正的英文字和選過的 emoji，直到你手動關掉。開著時，空白鍵上會顯示「無痕」，每次叫出鍵盤會短暫提示一次，App 主頁也會顯示提醒；連續開了 24 小時以上，會問你一次要不要關掉。</p>
+  <p>長按候選可以刪除或置頂這個詞。刪除學會的詞是從本機的使用者詞庫裡刪掉；置頂記錄只存在這台裝置上，不同步。</p>
+  <p>「防误触」（「设置」›「键盘」，預設開啟）只在全鍵盤拼音下起作用：點在按鍵邊緣時，鍵盤用 App 內建的字母機率表判斷你比較可能想按哪個鍵。判斷在裝置上完成，不另外記錄你的按鍵。</p>
+  <p><strong>僅限 TestFlight 測試版：</strong>「设置」›「键盘」›「测试统计（仅测试版）」預設關閉。你手動開啟後，鍵盤每天只記上屏、刪除等次數，不記錄打出的字、拼音和所在的 App；無痕模式開著時什麼都不記。統計只存在這台裝置上，不連網；只有你點「导出」才產生檔案，由你決定傳給誰。App Store 版本沒有這個功能。</p>
   <p>鍵盤提供英文拼字建議時，會使用 iOS 提供給鍵盤的聯絡人姓名和「替代文字」。這些內容由系統交給鍵盤，只在裝置上使用，不會儲存到別處或傳送出去。本 App 不要求聯絡人權限。</p>
 
   <h3>3. App 什麼時候連網</h3>
@@ -119,7 +134,7 @@
   <h3>4. iCloud 同步</h3>
   <ul>
     <li>iCloud 同步預設開啟，可在「设置」›「iCloud 同步」中隨時關閉。</li>
-    <li>同步的內容：使用者詞庫（學會的詞）、主題詞庫、不再自動修正的英文字，以及以下輸入設定：模糊音、拼音方案、字形、英文拼字建議、自動修正、拼音顯示在輸入框中、九宮格英文候選。</li>
+    <li>同步的內容：使用者詞庫（學會的詞）、主題詞庫、不再自動修正的英文字，以及以下輸入設定：模糊音、拼音方案、字形、英文拼字建議、自動修正、拼音顯示在輸入框中、九宮格英文候選、九宮格簡拼。常用語和候選置頂不同步。</li>
     <li>這些資料透過 Apple 的 CloudKit 存在<strong>你自己 iCloud 帳號的私人資料庫</strong>裡。開發者無法存取私人資料庫，看不到你的資料。儲存和傳輸由 Apple 負責，適用 Apple 的隱私權政策。</li>
     <li>同步只由主 App 完成，鍵盤擴充功能不連網。</li>
   </ul>
@@ -132,7 +147,8 @@
   </ul>
 
   <h3>6. 「完整取用」</h3>
-  <p>「完整取用」不是必須的。本 App 只用它來做按鍵震動、在候選列打開 App，以及讓鍵盤把不再自動修正的英文字和選過的 emoji 存到與 App 共用的位置。它不會讓鍵盤連網。</p>
+  <p>「完整取用」不是必須的。本 App 只用它來做按鍵震動、快捷面板裡的貼上和打開 App，以及讓鍵盤把你在鍵盤裡改的設定、不再自動修正的英文字和選過的 emoji 存到與 App 共用的位置（英文字因此能隨 iCloud 同步）。它不會讓鍵盤連網。</p>
+  <p>快捷面板裡的「粘贴」（貼上）是 iOS 系統提供的貼上按鈕：只有你點它時，系統才把剪貼簿內容交給鍵盤，鍵盤直接放進輸入框，所以不會跳出「允許貼上」的詢問。剪貼簿內容不會被儲存，也不會被上傳。</p>
 
   <h3>7. 兒童</h3>
   <p>本 App 不收集任何人的個人資料，包括兒童。</p>
@@ -162,10 +178,17 @@
     <li>your user dictionary: words the keyboard has learned and how often you use them;</li>
     <li>topic word lists you paste in, and user dictionaries you import;</li>
     <li>English words you told it not to autocorrect, and emoji you pick (turn off 记住我选的 emoji in Settings to stop remembering emoji);</li>
+    <li>saved phrases (常用语) you edit in the app;</li>
+    <li>candidates you pin by long-pressing them, and words you chose to delete so they no longer appear;</li>
     <li>input settings such as pinyin scheme, fuzzy pinyin, script and keyboard layout;</li>
     <li>automatic backups and exports of your user dictionary and settings, in the Salt folder you can see in the Files app.</li>
   </ul>
   <p>All of this stays on your device: dictionaries and settings in an App Group container shared by the app and its keyboard, backups and exports in the app's own folder. Deleting the app deletes them, except copies you have saved elsewhere.</p>
+  <p>Saved phrases are stored only on this device (in the space the app and keyboard share). They are never synced or uploaded.</p>
+  <p>When you turn on Incognito (无痕模式) in the keyboard's quick panel, Salt stops learning the words you pick, and stops remembering English words you told it not to autocorrect and the emoji you pick, until you turn it off. While it's on, the space bar shows 无痕 (Incognito), a short notice appears each time the keyboard comes up, and the app's home screen shows a reminder; after 24 hours on, Salt asks you once whether to turn it off.</p>
+  <p>Long-press a candidate to delete or pin it. Deleting a learned word removes it from the user dictionary on your device; pins are stored only on this device and don't sync.</p>
+  <p>防误触 (Touch correction, in 设置 › 键盘, on by default) works only on the full pinyin keyboard: when you tap near the edge of a key, the keyboard uses a letter-probability table built into the app to pick the key you more likely meant. This happens on device, and your key presses are not recorded for it.</p>
+  <p><strong>TestFlight builds only:</strong> 测试统计 (Typing stats, in 设置 › 键盘) is off by default. If you turn it on, the keyboard keeps daily counts such as commits and deletions; it never records the text you type, the pinyin, or which app you're in, and records nothing while Incognito is on. The counts stay on this device and never go online; a file is created only when you tap 导出 (Export), and you decide who gets it. The App Store version doesn't have this feature.</p>
   <p>For English suggestions, the keyboard uses the contact names and Text Replacements that iOS provides to keyboards. The system hands these to the keyboard; they are used on device only and are never stored elsewhere or sent anywhere. The app does not ask for Contacts permission.</p>
 
   <h3>3. When the app goes online</h3>
@@ -179,7 +202,7 @@
   <h3>4. iCloud sync</h3>
   <ul>
     <li>iCloud sync is on by default. You can turn it off at any time in 设置 (Settings) › iCloud 同步.</li>
-    <li>What syncs: your user dictionary (learned words), topic word lists, English words you told it not to autocorrect, and these input settings: fuzzy pinyin, pinyin scheme, script, English suggestions, autocorrect, pinyin shown in the text field, and 9-key English candidates.</li>
+    <li>What syncs: your user dictionary (learned words), topic word lists, English words you told it not to autocorrect, and these input settings: fuzzy pinyin, pinyin scheme, script, English suggestions, autocorrect, pinyin shown in the text field, 9-key English candidates, and 9-key abbreviations (九宫格简拼). Saved phrases and pinned candidates do not sync.</li>
     <li>This data is stored with Apple's CloudKit in <strong>the private database of your own iCloud account</strong>. The developer has no access to private databases and can't see your data. Apple stores and transfers it under Apple's privacy policy.</li>
     <li>Only the main app syncs. The keyboard extension never goes online.</li>
   </ul>
@@ -192,7 +215,8 @@
   </ul>
 
   <h3>6. Full Access</h3>
-  <p>Full Access is optional. The app uses it only for haptic feedback, the candidate-bar shortcut that opens the app, and letting the keyboard save English words you told it not to autocorrect, and the emoji you pick, where the app can see them. It does not let the keyboard go online.</p>
+  <p>Full Access is optional. The app uses it only for haptic feedback, Paste and opening the app from the quick panel, and letting the keyboard save settings you change in the keyboard, English words you told it not to autocorrect, and the emoji you pick where the app can see them (which lets those English words sync with iCloud). It does not let the keyboard go online.</p>
+  <p>Paste (粘贴) in the quick panel is the iOS system paste button: only when you tap it does iOS hand the clipboard to the keyboard, which puts the text straight into the text field, so there is no "Allow Paste" prompt. Clipboard contents are never stored or uploaded.</p>
 
   <h3>7. Children</h3>
   <p>The app collects no personal data from anyone, including children.</p>

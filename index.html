@@ -45,8 +45,9 @@
     <p>不需要。关闭「完全访问」也能正常打字。iOS 对所有开启完全访问的键盘显示同一条提示，盐输入法只用它来：</p>
     <ul>
       <li>按键震动；</li>
-      <li>候选栏上打开盐输入法 App 的快捷入口；</li>
-      <li>让键盘把「不再自动更正的英文词」和选过的 emoji 存到与 App 共用的位置，App 才能看到它们（不开时这些只记在键盘自己那里）。</li>
+      <li>快捷面板里的「粘贴」：这是 iOS 系统的粘贴按钮，点一下直接粘贴，不会弹出「允许粘贴」的询问；只有你点它时键盘才拿到剪贴板内容，直接放进输入框，不保存、不上传；</li>
+      <li>快捷面板里打开盐输入法 App 的快捷入口；</li>
+      <li>让键盘把你在键盘里改的设置、「不再自动更正的英文词」和选过的 emoji 存到与 App 共用的位置，App 才能看到它们，英文词也因此能随 iCloud 同步（不开时这些只记在键盘自己那里，不同步）。</li>
     </ul>
     <p>开了完全访问，键盘也不联网。在密码输入框中，iOS 会自动换用系统键盘。</p>
   </details>
@@ -75,9 +76,33 @@
 
   <details>
     <summary>iCloud 同步会同步什么？怎么关闭？</summary>
-    <p>同步学会的词、主题词库、不再自动更正的英文词，以及模糊音、拼音方案、字形、英文拼写建议与自动更正、拼音显示在输入框中、九宫格英文候选这些输入习惯设置。键盘布局、震动等各设备分开设置。</p>
+    <p>同步学会的词、主题词库、不再自动更正的英文词，以及模糊音、拼音方案、字形、英文拼写建议与自动更正、拼音显示在输入框中、九宫格英文候选、九宫格简拼这些输入习惯设置。键盘布局、震动等各设备分开设置。</p>
     <p>数据存在你自己的 iCloud 私有数据库里，开发者看不到。同步由 App 完成，键盘本身不联网。</p>
     <p>默认开启。在「设置」›「iCloud 同步」可以关闭，或点「立即同步」。更换 iCloud 账号后，App 会让你选择「合并本机数据到此账号」或「仅本机使用」。</p>
+  </details>
+
+  <details>
+    <summary>「无痕模式」是什么？</summary>
+    <p>点候选栏左侧的齿轮打开快捷面板，再点「无痕模式」。打开后，盐不再学习你选的词，也不记住不再自动更正的英文词和选过的 emoji，直到你手动关掉。</p>
+    <p>开着时，候选栏左侧的齿轮换成划掉的眼睛，空格键上显示「无痕」，每次弹出键盘会短暂提示（点提示就能关掉），App 主页也会显示提醒。连续开了 24 小时以上，会问你一次要不要关掉。</p>
+    <p>不论开不开无痕模式，键盘都不联网。</p>
+  </details>
+
+  <details>
+    <summary>常用语存在哪里？会同步吗？</summary>
+    <p>在 App 的「设置」›「键盘」›「常用语」里添加和修改。在键盘的快捷面板里点「常用语」，轻点一条就能输入。</p>
+    <p>常用语只存在这台设备上（App 与键盘共用的位置），不同步、不上传。</p>
+  </details>
+
+  <details>
+    <summary>长按候选能做什么？</summary>
+    <p>长按候选栏里的一个词，可以「删除」或「置顶」它。删除学会的词会从本机的用户词库里删掉；内置词库里的词删不掉，键盘会提示。置顶后，下次打同样的拼音，这个词排第一。置顶记录只存在这台设备上，不同步。</p>
+  </details>
+
+  <details>
+    <summary>「防误触」是什么？</summary>
+    <p>用全键盘打拼音时，如果点在两个键中间或按键边缘，键盘会根据前面打的字母，用 App 内置的字母概率表判断你更可能想按哪个键。判断在设备上完成，不收集任何数据。</p>
+    <p>在「设置」›「键盘」里开关，默认开启。九宫格、英文和大写状态下不起作用。</p>
   </details>
 
   <div class="contact">
@@ -109,8 +134,9 @@
     <p>不需要。關閉「完整取用」也能正常打字。iOS 對所有開啟完整取用的鍵盤顯示同一則提示，鹽輸入法只用它來：</p>
     <ul>
       <li>按鍵震動；</li>
-      <li>候選列上打開鹽輸入法 App 的捷徑；</li>
-      <li>讓鍵盤把「不再自動修正的英文字」和選過的 emoji 存到與 App 共用的位置，App 才看得到（不開時只記在鍵盤自己那裡）。</li>
+      <li>快捷面板裡的「粘贴」（貼上）：這是 iOS 系統的貼上按鈕，點一下直接貼上，不會跳出「允許貼上」的詢問；只有你點它時鍵盤才拿到剪貼簿內容，直接放進輸入框，不儲存、不上傳；</li>
+      <li>快捷面板裡打開鹽輸入法 App 的捷徑；</li>
+      <li>讓鍵盤把你在鍵盤裡改的設定、「不再自動修正的英文字」和選過的 emoji 存到與 App 共用的位置，App 才看得到，英文字也因此能隨 iCloud 同步（不開時只記在鍵盤自己那裡，不會同步）。</li>
     </ul>
     <p>開了完整取用，鍵盤也不連網。在密碼輸入框中，iOS 會自動換用系統鍵盤。</p>
   </details>
@@ -140,9 +166,33 @@
 
   <details>
     <summary>iCloud 同步會同步什麼？怎麼關閉？</summary>
-    <p>同步學會的詞、主題詞庫、不再自動修正的英文字，以及模糊音、拼音方案、字形、英文拼字建議與自動修正、拼音顯示在輸入框中、九宮格英文候選這些輸入習慣設定。鍵盤佈局、震動等各裝置分開設定。</p>
+    <p>同步學會的詞、主題詞庫、不再自動修正的英文字，以及模糊音、拼音方案、字形、英文拼字建議與自動修正、拼音顯示在輸入框中、九宮格英文候選、九宮格簡拼這些輸入習慣設定。鍵盤佈局、震動等各裝置分開設定。</p>
     <p>資料存在你自己的 iCloud 私人資料庫裡，開發者看不到。同步由 App 完成，鍵盤本身不連網。</p>
     <p>預設開啟。在「设置」›「iCloud 同步」可以關閉，或點「立即同步」。更換 iCloud 帳號後，App 會讓你選擇「合并本机数据到此账号」或「仅本机使用」。</p>
+  </details>
+
+  <details>
+    <summary>「无痕模式」是什麼？</summary>
+    <p>點候選列左側的齒輪打開快捷面板，再點「无痕模式」。打開後，鹽不再學習你選的詞，也不記住不再自動修正的英文字和選過的 emoji，直到你手動關掉。</p>
+    <p>開著時，候選列左側的齒輪會換成劃掉的眼睛，空白鍵上顯示「無痕」，每次叫出鍵盤會短暫提示（點提示就能關掉），App 主頁也會顯示提醒。連續開了 24 小時以上，會問你一次要不要關掉。</p>
+    <p>不論開不開無痕模式，鍵盤都不連網。</p>
+  </details>
+
+  <details>
+    <summary>常用語存在哪裡？會同步嗎？</summary>
+    <p>在 App 的「设置」›「键盘」›「常用语」裡新增和修改。在鍵盤的快捷面板裡點「常用语」，輕點一條就能輸入。</p>
+    <p>常用語只存在這台裝置上（App 與鍵盤共用的位置），不同步、不上傳。</p>
+  </details>
+
+  <details>
+    <summary>長按候選能做什麼？</summary>
+    <p>長按候選列裡的一個詞，可以刪除或置頂它。刪除學會的詞會從本機的使用者詞庫裡刪掉；內建詞庫裡的詞刪不掉，鍵盤會提示。置頂後，下次打同樣的拼音，這個詞排第一。置頂記錄只存在這台裝置上，不同步。</p>
+  </details>
+
+  <details>
+    <summary>「防误触」是什麼？</summary>
+    <p>用全鍵盤打拼音時，如果點在兩個鍵中間或按鍵邊緣，鍵盤會根據前面打的字母，用 App 內建的字母機率表判斷你比較可能想按哪個鍵。判斷在裝置上完成，不收集任何資料。</p>
+    <p>在「设置」›「键盘」開關，預設開啟。九宮格、英文和大寫狀態下不起作用。</p>
   </details>
 
   <div class="contact">
@@ -174,8 +224,9 @@
     <p>No. Typing works normally with Full Access off. iOS shows the same warning for every keyboard that asks for Full Access. Salt uses it only for:</p>
     <ul>
       <li>haptic feedback on key presses;</li>
-      <li>the shortcut on the candidate bar that opens the Salt app;</li>
-      <li>letting the keyboard save English words you told it not to autocorrect, and the emoji you pick, where the app can see them. Without Full Access they stay with the keyboard only.</li>
+      <li>Paste (粘贴) in the quick panel: it is the iOS system paste button, so one tap pastes with no "Allow Paste" prompt. The keyboard gets the clipboard only when you tap it, puts the text straight into the text field, and never stores or uploads it;</li>
+      <li>the quick panel shortcut that opens the Salt app;</li>
+      <li>letting the keyboard save settings you change in the keyboard, English words you told it not to autocorrect, and the emoji you pick, where the app can see them, which also lets those English words sync with iCloud. Without Full Access they stay with the keyboard only and don't sync.</li>
     </ul>
     <p>The keyboard never goes online, with or without Full Access. In password fields iOS switches to the system keyboard automatically.</p>
   </details>
@@ -204,9 +255,33 @@
 
   <details>
     <summary>What does iCloud sync sync, and how do I turn it off?</summary>
-    <p>It syncs the words Salt has learned, your topic word lists, English words you told it not to autocorrect, and these typing settings: fuzzy pinyin, pinyin scheme, script, English suggestions and autocorrect, pinyin shown in the text field, and 9-key English candidates. Keyboard layout, haptics and similar settings stay per device.</p>
+    <p>It syncs the words Salt has learned, your topic word lists, English words you told it not to autocorrect, and these typing settings: fuzzy pinyin, pinyin scheme, script, English suggestions and autocorrect, pinyin shown in the text field, 9-key English candidates, and 9-key abbreviations (九宫格简拼). Keyboard layout, haptics and similar settings stay per device.</p>
     <p>The data lives in your own private iCloud database, where the developer can't see it. The app does the syncing; the keyboard itself never goes online.</p>
     <p>Sync is on by default. Turn it off, or tap 立即同步 (Sync now), in 设置 (Settings) › iCloud 同步. If you switch iCloud accounts, the app asks whether to merge this device's data into the new account or keep it on this device only.</p>
+  </details>
+
+  <details>
+    <summary>What is Incognito (无痕模式)?</summary>
+    <p>Tap the gear at the left of the candidate bar to open the quick panel, then tap 无痕模式 (Incognito). While it's on, Salt stops learning the words you pick, and stops remembering English words you told it not to autocorrect and the emoji you pick, until you turn it off.</p>
+    <p>While it's on, the gear changes to a crossed-out eye, the space bar shows 无痕 (Incognito), a short notice appears each time the keyboard comes up (tap it to turn Incognito off), and the app's home screen shows a reminder. After 24 hours on, Salt asks you once whether to turn it off.</p>
+    <p>The keyboard never goes online, with Incognito on or off.</p>
+  </details>
+
+  <details>
+    <summary>Where are saved phrases (常用语) stored? Do they sync?</summary>
+    <p>Add and edit them in the app under 设置 (Settings) › 键盘 (Keyboard) › 常用语 (Saved phrases). In the keyboard's quick panel, tap 常用语 and then tap a phrase to type it.</p>
+    <p>Saved phrases are stored only on this device (in the space the app and keyboard share). They are never synced or uploaded.</p>
+  </details>
+
+  <details>
+    <summary>What does long-pressing a candidate do?</summary>
+    <p>Long-press a word in the candidate bar to delete or pin it. Deleting a learned word removes it from the user dictionary on your device; words in the built-in dictionary can't be deleted, and the keyboard tells you so. A pinned word comes first the next time you type the same pinyin. Pins are stored only on this device and don't sync.</p>
+  </details>
+
+  <details>
+    <summary>What is 防误触 (Touch correction)?</summary>
+    <p>When you type pinyin on the full keyboard and tap between two keys or near a key's edge, the keyboard looks at the letters before it and uses a letter-probability table built into the app to pick the key you more likely meant. This happens on device; no data is collected.</p>
+    <p>Turn it on or off in 设置 (Settings) › 键盘 (Keyboard). It's on by default and does nothing on the 9-key pad, in English, or with Shift on.</p>
   </details>
 
   <div class="contact">
