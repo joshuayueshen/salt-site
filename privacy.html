@@ -52,7 +52,10 @@
   <p>在键盘的快捷面板里打开「无痕模式」后，盐不再学习你选的词，也不记住不再自动更正的英文词和选过的 emoji，直到你手动关掉。开着时，空格键上会显示「无痕」，每次弹出键盘会短暂提示一次，App 主页也会显示提醒；连续开了 24 小时以上，会问你一次要不要关掉。</p>
   <p>长按候选可以删除或置顶这个词。删除学会的词是从本机的用户词库里删掉；置顶记录只存在这台设备上，不同步。</p>
   <p>「防误触」（「设置」›「键盘」，默认开启）只在全键盘拼音下起作用：点在按键边缘时，键盘用 App 内置的字母概率表判断你更可能想按哪个键。判断在设备上完成，不另外记录你的按键。</p>
-  <p><strong>仅 TestFlight 测试版：</strong>「设置」›「键盘」›「测试统计（仅测试版）」默认关闭。你手动开启后，键盘每天只记上屏、删除等次数，不记录打出的字、拼音和所在的 App；无痕模式开着时什么都不记。统计只存在这台设备上，不联网；只有你点「导出」才生成文件，由你决定发给谁。App Store 版本没有这个功能。</p>
+  <p><strong>仅 TestFlight 测试版：</strong>「设置」›「键盘」›「测试统计（仅测试版）」默认关闭。你手动开启后，键盘每天只记上屏、删除等次数，不记录打出的字、拼音和所在的 App；无痕模式开着时什么都不记。统计只存在这台设备上，不联网；只有你点「导出」才生成文件，由你决定发给谁。App Store 版本没有这个功能。（下面的「用词记录」是另一个功能，会记录文字。）</p>
+  <p><strong>仅 TestFlight 测试版：</strong>「设置」›「键盘」›「用词记录（仅测试版）」默认关闭，只在你手动开启后记录，用来找出词库需要改进的地方。和「测试统计」不同，它<strong>会记录你打出的中文</strong>：开启后，你用盐输入法打中文时，键盘会记下上屏的中文、为它按的键（字母或九宫格数字）、选的是第几个候选、当时排在前三的候选、有没有用「选拼音」、上屏后马上删掉了几个字，以及整段清空或放弃的拼音；也会记下用的词库和键盘布局，时间只记到日期。</p>
+  <p>用词记录不记录：英文输入；密码框里打的字；App 标明了内容类型（如验证码、用户名、姓名、电话、邮箱、网址、地址、银行卡）或使用数字、电话、邮箱、网址等非标准键盘的输入框里打的字；你在哪个 App 里打字；输入框里原有的文字。无痕模式开着时暂停记录。</p>
+  <p>用词记录只存在这台设备上：开了「完全访问」时存在本 App 与键盘共用的 App 群组容器里，没开时先存在键盘自己的容器里，开启后再移过去。它不联网，也不随 iCloud 同步。开启 14 天后自动关闭，已有记录保留到你清除为止；文件超过 20 MB 时会删掉最早的记录。只有你点「导出」才生成文件，由你决定发给谁；随时可以点「清除」删除全部记录，删除本 App 也会一并删除。App Store 版本没有这个功能。</p>
   <p>键盘提供英文拼写建议时，会使用 iOS 提供给键盘的通讯录姓名和「文本替换」。这些内容由系统交给键盘，只在设备上使用，不会保存到别处或发送出去。本 App 不请求通讯录权限。</p>
 
   <h3>3. App 什么时候联网</h3>
@@ -75,7 +78,7 @@
   <ul>
     <li>没有账号，不需要登录。</li>
     <li>没有广告，没有第三方统计或分析工具，不追踪你。</li>
-    <li>开发者不收集、不出售、不分享任何个人数据或输入内容。</li>
+    <li>开发者不收集、不出售、不分享任何个人数据或输入内容。我们只会收到你在测试版里自己导出、自己发给我们的「测试统计」或「用词记录」文件。</li>
   </ul>
 
   <h3>6. 「完全访问」</h3>
@@ -120,7 +123,10 @@
   <p>在鍵盤的快捷面板裡打開「无痕模式」後，鹽不再學習你選的詞，也不記住不再自動修正的英文字和選過的 emoji，直到你手動關掉。開著時，空白鍵上會顯示「無痕」，每次叫出鍵盤會短暫提示一次，App 主頁也會顯示提醒；連續開了 24 小時以上，會問你一次要不要關掉。</p>
   <p>長按候選可以刪除或置頂這個詞。刪除學會的詞是從本機的使用者詞庫裡刪掉；置頂記錄只存在這台裝置上，不同步。</p>
   <p>「防误触」（「设置」›「键盘」，預設開啟）只在全鍵盤拼音下起作用：點在按鍵邊緣時，鍵盤用 App 內建的字母機率表判斷你比較可能想按哪個鍵。判斷在裝置上完成，不另外記錄你的按鍵。</p>
-  <p><strong>僅限 TestFlight 測試版：</strong>「设置」›「键盘」›「测试统计（仅测试版）」預設關閉。你手動開啟後，鍵盤每天只記上屏、刪除等次數，不記錄打出的字、拼音和所在的 App；無痕模式開著時什麼都不記。統計只存在這台裝置上，不連網；只有你點「导出」才產生檔案，由你決定傳給誰。App Store 版本沒有這個功能。</p>
+  <p><strong>僅限 TestFlight 測試版：</strong>「设置」›「键盘」›「测试统计（仅测试版）」預設關閉。你手動開啟後，鍵盤每天只記上屏、刪除等次數，不記錄打出的字、拼音和所在的 App；無痕模式開著時什麼都不記。統計只存在這台裝置上，不連網；只有你點「导出」才產生檔案，由你決定傳給誰。App Store 版本沒有這個功能。（下面的「用词记录」是另一個功能，會記錄文字。）</p>
+  <p><strong>僅限 TestFlight 測試版：</strong>「设置」›「键盘」›「用词记录（仅测试版）」預設關閉，只在你手動開啟後記錄，用來找出詞庫需要改進的地方。和「测试统计」不同，它<strong>會記錄你打出的中文</strong>：開啟後，你用鹽輸入法打中文時，鍵盤會記下上屏的中文、為它按的鍵（字母或九宮格數字）、選的是第幾個候選、當時排在前三的候選、有沒有用「选拼音」、上屏後馬上刪掉了幾個字，以及整段清空或放棄的拼音；也會記下用的詞庫和鍵盤佈局，時間只記到日期。</p>
+  <p>用詞記錄不記錄：英文輸入；密碼框裡打的字；App 標明了內容類型（如驗證碼、使用者名稱、姓名、電話、電子郵件、網址、地址、信用卡）或使用數字、電話、電子郵件、網址等非標準鍵盤的輸入框裡打的字；你在哪個 App 裡打字；輸入框裡原有的文字。無痕模式開著時暫停記錄。</p>
+  <p>用詞記錄只存在這台裝置上：開了「完整取用」時存在本 App 與鍵盤共用的 App 群組容器裡，沒開時先存在鍵盤自己的容器裡，開啟後再移過去。它不連網，也不隨 iCloud 同步。開啟 14 天後自動關閉，已有記錄保留到你清除為止；檔案超過 20 MB 時會刪掉最早的記錄。只有你點「导出」才產生檔案，由你決定傳給誰；隨時可以點「清除」刪除全部記錄，刪除本 App 也會一併刪除。App Store 版本沒有這個功能。</p>
   <p>鍵盤提供英文拼字建議時，會使用 iOS 提供給鍵盤的聯絡人姓名和「替代文字」。這些內容由系統交給鍵盤，只在裝置上使用，不會儲存到別處或傳送出去。本 App 不要求聯絡人權限。</p>
 
   <h3>3. App 什麼時候連網</h3>
@@ -143,7 +149,7 @@
   <ul>
     <li>沒有帳號，不需要登入。</li>
     <li>沒有廣告，沒有第三方統計或分析工具，不追蹤你。</li>
-    <li>開發者不收集、不出售、不分享任何個人資料或輸入內容。</li>
+    <li>開發者不收集、不出售、不分享任何個人資料或輸入內容。我們只會收到你在測試版裡自己匯出、自己傳給我們的「测试统计」或「用词记录」檔案。</li>
   </ul>
 
   <h3>6. 「完整取用」</h3>
@@ -188,7 +194,10 @@
   <p>When you turn on Incognito (无痕模式) in the keyboard's quick panel, Salt stops learning the words you pick, and stops remembering English words you told it not to autocorrect and the emoji you pick, until you turn it off. While it's on, the space bar shows 无痕 (Incognito), a short notice appears each time the keyboard comes up, and the app's home screen shows a reminder; after 24 hours on, Salt asks you once whether to turn it off.</p>
   <p>Long-press a candidate to delete or pin it. Deleting a learned word removes it from the user dictionary on your device; pins are stored only on this device and don't sync.</p>
   <p>防误触 (Touch correction, in 设置 › 键盘, on by default) works only on the full pinyin keyboard: when you tap near the edge of a key, the keyboard uses a letter-probability table built into the app to pick the key you more likely meant. This happens on device, and your key presses are not recorded for it.</p>
-  <p><strong>TestFlight builds only:</strong> 测试统计 (Typing stats, in 设置 › 键盘) is off by default. If you turn it on, the keyboard keeps daily counts such as commits and deletions; it never records the text you type, the pinyin, or which app you're in, and records nothing while Incognito is on. The counts stay on this device and never go online; a file is created only when you tap 导出 (Export), and you decide who gets it. The App Store version doesn't have this feature.</p>
+  <p><strong>TestFlight builds only:</strong> 测试统计 (Typing stats, in 设置 › 键盘) is off by default. If you turn it on, the keyboard keeps daily counts such as commits and deletions; it never records the text you type, the pinyin, or which app you're in, and records nothing while Incognito is on. The counts stay on this device and never go online; a file is created only when you tap 导出 (Export), and you decide who gets it. The App Store version doesn't have this feature. (The word log below is a separate feature, and it does record text.)</p>
+  <p><strong>TestFlight builds only:</strong> 用词记录 (Word log, in 设置 › 键盘) is off by default and records only after you turn it on; it helps us find where the word lists need work. Unlike typing stats, <strong>it records the Chinese you type</strong>: while it's on and you type Chinese with Salt, the keyboard records the text you commit, the keys you pressed for it (letters or 9-key digits), which candidate you picked and the top three shown at the time, whether you used 选拼音, how many characters you deleted right after committing, and pinyin you cleared or abandoned. It also notes the word list and keyboard layout in use, with dates only, not times.</p>
+  <p>The word log never records: English typing; anything typed in password fields; anything typed in fields where the app declares a content type (such as verification codes, usernames, names, phone numbers, email, URLs, addresses or card numbers) or uses a non-standard keyboard (such as number, phone, email or URL keyboards); which app you're typing in; or text already in the field. It pauses while Incognito (无痕模式) is on.</p>
+  <p>The word log stays on this device: with Full Access on, in the App Group container shared by the app and its keyboard; without it, in the keyboard's own container until Full Access is turned on. It never goes online and doesn't sync with iCloud. It turns itself off 14 days after you turn it on; what was recorded stays until you clear it, and past 20 MB the oldest entries are dropped. A file is created only when you tap 导出 (Export), and you decide who gets it; 清除 (Clear) deletes everything at any time, and deleting the app deletes it too. The App Store version doesn't have this feature.</p>
   <p>For English suggestions, the keyboard uses the contact names and Text Replacements that iOS provides to keyboards. The system hands these to the keyboard; they are used on device only and are never stored elsewhere or sent anywhere. The app does not ask for Contacts permission.</p>
 
   <h3>3. When the app goes online</h3>
@@ -211,7 +220,7 @@
   <ul>
     <li>No account and no sign-in.</li>
     <li>No ads, no third-party analytics, no tracking.</li>
-    <li>The developer does not collect, sell or share any personal data or anything you type.</li>
+    <li>The developer does not collect, sell or share any personal data or anything you type. The only things we receive are typing-stats or word-log files you export from a test build and send us yourself.</li>
   </ul>
 
   <h3>6. Full Access</h3>
